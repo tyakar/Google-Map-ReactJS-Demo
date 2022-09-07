@@ -9,14 +9,14 @@ const render = (status) => {
   return null;
 };
 
-export default function Map({apiKey}) {
+export default function Map({apiKey, data}) {
 
   return (
     <Wrapper
         apiKey={apiKey}
         render={render}
       >
-        <MapComponent />
+        <MapComponent data = {data }/>
       </Wrapper>
   );
 };
