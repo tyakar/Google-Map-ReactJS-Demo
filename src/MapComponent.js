@@ -13,29 +13,7 @@ export default function MapComponent({ data }) {
     addMarker(googleMap);
   }, []);
 
-
-  // const markers = data.map((item, i) => {
-  //   return new google.maps.Marker({
-  //     position: [item.lng, item.lat],
-  //     label: i
-  //   });
-  // });
-
   const addMarker = (map) => {
-    const iconBase =
-      "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
-
-    const icons = {
-      1: {
-        icon: iconBase + "parking_lot_maps.png",
-      },
-      2: {
-        icon: iconBase + "library_maps.png",
-      },
-      3: {
-        icon: iconBase + "info-i_maps.png",
-      }
-    };
 
     const createPopup = (aa, bb) =>{
       return '<div id="content">' +
